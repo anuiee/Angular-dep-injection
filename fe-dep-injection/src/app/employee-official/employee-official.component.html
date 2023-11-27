@@ -1,0 +1,21 @@
+<p>employee-official works!</p>
+<div>
+    <table class="table table-striped"> <!-- attribute directive -->
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Designation</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of employeeOfficial">
+              <th scope="row">{{ item.Id }}</th>
+              <td>{{ item.Fullname }}</td>
+              <td>{{ item.Designation }}</td>
+            </tr>
+              
+        </tbody>
+    </table>
+</div>
